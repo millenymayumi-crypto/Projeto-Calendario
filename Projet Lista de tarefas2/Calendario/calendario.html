@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/diary.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Calendário</title>
+</head>
+<body>
+    
+    <div class="calendario">
+        <div class="header">
+            <button id="anterior" class="btn">
+                    <img src="./img/arrows.png" class="icon">
+            </button>
+
+            <div class="mes-container">
+                <img src="./img/face.png" class="icon-cat">
+                <div id="mesAno"></div>
+                <img src="./img/cute.png" class="icon-cat">
+            </div>
+
+            <button id="proximo" class="btn">
+                <img src="./img/arrows.png" class="icon">
+            </button>
+        </div>
+
+        <div class="diasDaSemana">
+            <div>Dom</div>
+            <div>Seg</div>
+            <div>Ter</div>
+            <div>Qua</div>
+            <div>Qui</div>
+            <div>Sex</div>
+            <div>Sáb</div>
+        </div>
+
+        <div class="dias" id="dias"></div>
+    </div>
+
+    <div id="janela" class="janela">
+        <div class="janela-conteudo">
+
+            <div class="tituloJanela">
+                <img src="./img/gato doido.png" class="iconGatoDoido">
+                <h2 id="tituloDia">Dia</h2>
+                <img src="./img/willow.png" class="folhinha">
+            </div>
+
+            <textarea id="nota" placeholder="Escreva algo..."></textarea>
+
+            <input type="time" id="horario">
+            <input type="text" id="lugar" placeholder="Lugar">
+            <input type="url" id="link" placeholder="Link">
+            <input type="file" id="imagem">
+
+            <button id="salvar">Salvar</button>
+            <button id="fechar">Fechar</button>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>
