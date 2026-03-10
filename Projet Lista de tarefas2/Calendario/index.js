@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const tituloDia = document.getElementById("tituloDia");
     const btnFechar = document.getElementById("fechar");
 
+    const btnAnterior = document.getElementById("anterior");
+    const btnProximo = document.getElementById("proximo");
+
     // VARIÁVEIS DO ARRASTAR
     let arrastar = false;
     let offsetX = 0;
@@ -92,6 +95,17 @@ document.addEventListener('DOMContentLoaded', function() {
     btnFechar.addEventListener("click", function() {
         janela.style.display = "none";
     });
+
+    // Botoes pra mudar os meses
+    btnAnterior.addEventListener("click", function() {
+        dataAtual.setMonth(dataAtual.getMonth() - 1);
+        atualizarCalendario();
+    });
+    btnProximo.addEventListener("click", function() {
+        dataAtual.setMonth(dataAtual.getMonth() + 1);
+        atualizarCalendario();
+    });
+
 
     // executa a função quando a página carrega
     atualizarCalendario();

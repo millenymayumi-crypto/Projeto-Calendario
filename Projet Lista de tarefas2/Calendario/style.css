@@ -34,17 +34,14 @@ body {
 }
 
 .calendario {
-    width: 900px;
+    width: 1050px;
+    max-width: 95vw;
     padding: 30px 40px;
     border-radius: 20px;
-
     position: relative;
 
     background-color: rgba(237, 231, 227, 0.10);
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-
     color: var(--font-color-padrão);
-
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
@@ -63,6 +60,8 @@ body {
 
     width: 40px;
     height:  40px;
+
+    flex-shrink: 0;
 
     background: none;
     border: none;
@@ -84,6 +83,7 @@ body {
 .mes-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -143,7 +143,7 @@ body {
     flex-direction: column;
     gap: 10px;
 
-    width: 400px;
+    width: 500px;
     min-height: 500px;
 
     padding: 20px;
@@ -179,8 +179,9 @@ body {
     transition: 0.5s;
 }
 #tituloDia {
-    font-size: 2em;
+    font-size: 2.5em;
     color: #333d29;
+    margin: 35px;
 }
 #nota {
     width: 100%;
@@ -213,6 +214,8 @@ body {
     padding: 5px;
 }
 #salvar, #fechar {
+    align-self: center;
+    width: 90px;
     background-color: var(--btn-color);
     border: 2px solid var(--border-color-padrao-verde);
     border-radius: 10px;
